@@ -1,0 +1,53 @@
+/* Shared section wrapper */
+.section {
+  padding: 7rem 4rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Section label e.g. "01 — About" */
+.label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.label::after {
+  content: '';
+  flex: 1;
+  max-width: 48px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+/* Section heading */
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 3.8vw, 3.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  margin-bottom: 3.5rem;
+  color: var(--fg);
+}
+
+/* Accent word inside the title — gradient instead of italic serif */
+.titleAccent {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  background: linear-gradient(125deg, var(--accent) 0%, #f0965e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 900px) {
+  .section { padding: 5rem 1.5rem; }
+  .title { font-size: clamp(2rem, 8vw, 2.8rem); }
+}

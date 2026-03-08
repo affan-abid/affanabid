@@ -1,0 +1,337 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   KEYFRAMES must live in the same CSS Modules file that uses them.
+   CSS Modules scopes class names but keyframe names are global — however
+   Next.js compiles modules separately, so keyframes from globals.css are
+   NOT reliably available here. Define them locally to guarantee they work.
+   ───────────────────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.75); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ── Layout ────────────────────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 72px;
+  position: relative;
+}
+
+/* ── Left column ───────────────────────────────────────────────────────── */
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 3rem 5rem 4rem;
+}
+
+/* Badge row — badge + location on same line */
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.1s forwards;
+}
+
+/* Availability badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(61, 220, 132, 0.08);
+  border: 1px solid rgba(61, 220, 132, 0.22);
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  animation: pulse 2s ease infinite;
+}
+
+/* Location pill — sits right next to the badge */
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border2);
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg3);
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+.location:hover {
+  color: var(--fg2);
+  border-color: var(--border2);
+}
+
+.locationIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+}
+
+/* Name */
+.name {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(3.2rem, 6vw, 6.5rem);
+  line-height: 0.93;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.1rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.22s forwards;
+}
+
+.firstName {
+  color: var(--fg);
+}
+
+.lastName {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  background: linear-gradient(125deg, var(--accent) 0%, #f0965e 55%, #fbbf7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Role subtitle */
+.role {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg3);
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.34s forwards;
+}
+
+/* Summary */
+.summary {
+  font-family: var(--font-body), sans-serif;
+  font-size: 1.02rem;
+  color: var(--fg2);
+  max-width: 460px;
+  line-height: 1.82;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.46s forwards;
+}
+
+/* CTA buttons */
+.ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.58s forwards;
+}
+
+.btnPrimary {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btnPrimary:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(232, 97, 58, 0.35);
+}
+
+.btnSecondary {
+  display: inline-block;
+  border: 1.5px solid var(--border2);
+  color: var(--fg2);
+  padding: 0.85rem 2rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.btnSecondary:hover {
+  border-color: var(--accent);
+  color: var(--fg);
+  transform: translateY(-2px);
+}
+
+/* Scroll indicator */
+.scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 1s forwards;
+}
+.scrollLine {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+.scrollLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg3);
+}
+
+/* ── Right column — Stats card ─────────────────────────────────────────── */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 4rem 4rem 2rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.5s forwards;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  position: relative;
+  box-shadow:
+    0 0 0 1px rgba(232, 97, 58, 0.04),
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    0 0 80px -20px rgba(232, 97, 58, 0.12);
+}
+
+/* Top accent line */
+.cardAccent {
+  position: absolute;
+  top: 0; left: 0;
+  width: 56px; height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--purple));
+}
+
+.cardLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg3);
+  margin-bottom: 1.75rem;
+}
+
+/* 2×2 metric grid */
+.metricGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.metric {}
+
+.metricVal {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 1;
+  color: var(--fg);
+  margin-bottom: 0.3rem;
+}
+
+.metricUnit {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+.metricLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg3);
+  line-height: 1.4;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 1.5rem;
+}
+
+/* Tech chips */
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.chip {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 0.24rem 0.7rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  color: var(--fg2);
+  transition: border-color 0.2s, color 0.2s;
+}
+.chip:hover {
+  border-color: var(--border2);
+  color: var(--fg);
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 72px;
+  }
+  .left {
+    padding: 4rem 1.5rem 2rem;
+  }
+  .right {
+    padding: 2rem 1.5rem 4rem;
+  }
+}

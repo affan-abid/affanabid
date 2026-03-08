@@ -1,0 +1,112 @@
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+:root {
+  /* ── Warm gray palette — feels professional, not oppressive ── */
+  --bg:        #1a1a1e;   /* warm charcoal — not pure black */
+  --surface:   #222228;   /* slightly lighter warm gray */
+  --surface2:  #2a2a32;   /* card hover state */
+  --surface3:  #32323c;   /* deepest surface */
+  --border:    #34343e;   /* visible but subtle */
+  --border2:   #46464f;   /* stronger border for hover states */
+  --fg:        #f2f2f5;   /* warm near-white */
+  --fg2:       #a8a8b8;   /* secondary text */
+  --fg3:       #606070;   /* muted / disabled */
+  --accent:    #e8613a;   /* terracotta — warm & energetic */
+  --accent2:   #5cb8f0;   /* sky blue — links & company names */
+  --green:     #3ddc84;   /* availability badge */
+  --purple:    #b09ef5;   /* gradient accents */
+
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body), 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Background ─────────────────────────────────────────────────────────
+   Layered effect — from bottom up:
+   1. Base warm charcoal (#1a1a1e)
+   2. Soft diagonal gradient to add depth (lighter top-left → darker bottom-right)
+   3. Three gentle radial glows for colour atmosphere
+   4. Fine dot grid for subtle texture
+   ──────────────────────────────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    /* Warm amber glow — top left, very subtle */
+    radial-gradient(ellipse 70% 55% at -10% 5%,  rgba(232, 97, 58, 0.09) 0%, transparent 65%),
+    /* Cool blue glow — bottom right */
+    radial-gradient(ellipse 55% 45% at 110% 95%, rgba(92, 184, 240, 0.07) 0%, transparent 60%),
+    /* Purple whisper — centre */
+    radial-gradient(ellipse 45% 35% at 55% 45%,  rgba(176, 158, 245, 0.04) 0%, transparent 65%),
+    /* Diagonal brightness lift — top-left is slightly lighter */
+    linear-gradient(145deg, rgba(255,255,255,0.025) 0%, rgba(0,0,0,0.06) 100%),
+    var(--bg);
+}
+
+/* Fine dot grid — gives structured, grid-paper texture */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Everything sits above the background layers */
+nav, main, footer { position: relative; z-index: 1; }
+
+/* ─── Scroll-Reveal ──────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.75); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ─── Selection ──────────────────────────────────────────────────────────── */
+::selection { background: rgba(232, 97, 58, 0.22); color: var(--fg); }
+
