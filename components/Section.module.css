@@ -7,7 +7,7 @@
 /* Section label e.g. "01 — About" */
 .label {
   font-family: var(--font-mono), monospace;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
@@ -29,7 +29,7 @@
 .title {
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  font-size: clamp(2.2rem, 3.8vw, 3.6rem);
+  font-size: clamp(2.4rem, 4vw, 4rem);
   letter-spacing: -0.04em;
   line-height: 1.0;
   margin-bottom: 3.5rem;
@@ -49,5 +49,5 @@
 
 @media (max-width: 900px) {
   .section { padding: 5rem 1.5rem; }
-  .title { font-size: clamp(2rem, 8vw, 2.8rem); }
+  .title { font-size: clamp(2.2rem, 8vw, 3.2rem); }
 }

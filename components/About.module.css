@@ -7,7 +7,7 @@
 
 .bio p {
   font-family: var(--font-body), sans-serif;
-  font-size: 1.03rem;
+  font-size: 1.1rem;
   color: var(--fg2);
   margin-bottom: 1.25rem;
   line-height: 1.88;
@@ -33,7 +33,7 @@
 .metricVal {
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   color: var(--fg);
   line-height: 1;
   margin-bottom: 0.3rem;
@@ -41,7 +41,7 @@
 .metricVal span { color: var(--accent); }
 .metricLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.56rem;
+  font-size: 0.65rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -68,7 +68,7 @@
 
 .blockLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -77,14 +77,14 @@
 
 .eduItem { margin-bottom: 1.1rem; }
 .eduItem:last-child { margin-bottom: 0; }
-.eduDegree { font-weight: 600; font-size: 0.88rem; color: var(--fg); margin-bottom: 0.15rem; }
-.eduSchool { font-family: var(--font-mono), monospace; font-size: 0.62rem; color: var(--fg2); }
+.eduDegree { font-weight: 600; font-size: 0.95rem; color: var(--fg); margin-bottom: 0.15rem; }
+.eduSchool { font-family: var(--font-mono), monospace; font-size: 0.7rem; color: var(--fg2); }
 .gpaBadge {
   display: inline-block;
   background: var(--accent);
   color: #fff;
   font-family: var(--font-mono), monospace;
-  font-size: 0.56rem;
+  font-size: 0.65rem;
   padding: 0.14rem 0.5rem;
   margin-top: 0.3rem;
   letter-spacing: 0.06em;

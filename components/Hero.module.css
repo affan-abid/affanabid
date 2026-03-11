@@ -58,7 +58,7 @@
   border: 1px solid rgba(61, 220, 132, 0.22);
   padding: 0.35rem 0.9rem;
   font-family: var(--font-mono), monospace;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--green);
@@ -83,7 +83,7 @@
   border: 1px solid var(--border2);
   padding: 0.35rem 0.85rem;
   font-family: var(--font-mono), monospace;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -108,7 +108,7 @@
   flex-direction: column;
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  font-size: clamp(3.2rem, 6vw, 6.5rem);
+  font-size: clamp(3.5rem, 6.5vw, 7rem);
   line-height: 0.93;
   letter-spacing: -0.035em;
   margin-bottom: 1.1rem;
@@ -133,7 +133,7 @@
 .role {
   font-family: var(--font-display), sans-serif;
   font-weight: 500;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -145,7 +145,7 @@
 /* Summary */
 .summary {
   font-family: var(--font-body), sans-serif;
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   color: var(--fg2);
   max-width: 460px;
   line-height: 1.82;
@@ -170,7 +170,7 @@
   padding: 0.85rem 2rem;
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
@@ -188,7 +188,7 @@
   padding: 0.85rem 2rem;
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: border-color 0.2s, color 0.2s, transform 0.2s;
@@ -215,7 +215,7 @@
 }
 .scrollLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.56rem;
+  font-size: 0.65rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -254,7 +254,7 @@
 
 .cardLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -274,7 +274,7 @@
 .metricVal {
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1;
   color: var(--fg);
   margin-bottom: 0.3rem;
@@ -282,12 +282,12 @@
 
 .metricUnit {
   color: var(--accent);
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .metricLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.56rem;
+  font-size: 0.65rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg3);
@@ -307,14 +307,23 @@
   gap: 0.45rem;
 }
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   background: var(--surface2);
   border: 1px solid var(--border);
   padding: 0.24rem 0.7rem;
   font-family: var(--font-mono), monospace;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   letter-spacing: 0.06em;
   color: var(--fg2);
   transition: border-color 0.2s, color 0.2s;
+}
+.chipIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 .chip:hover {
   border-color: var(--border2);

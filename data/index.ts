@@ -55,6 +55,76 @@ export const education = [
   },
 ]
 
+// Tech stack icon mapping: skill name → Simple Icons slug (cdn.simpleicons.org)
+// Use techStackIconUrls for full URLs when CDN slug doesn't work (e.g. AWS)
+export const techStackIcons: Record<string, string> = {
+  // Backend
+  'Node.js': 'nodedotjs',
+  'TypeScript': 'typescript',
+  'PHP': 'php',
+  'Laravel': 'laravel',
+  'Zend': 'zend',
+  'Yii2': 'yii',
+  'Yii': 'yii',
+  'Python': 'python',
+  'REST APIs': 'openapiinitiative',
+  // Frontend
+  'React': 'react',
+  'React.js': 'react',
+  'Vue.js': 'vuedotjs',
+  'Vue': 'vuedotjs',
+  'JavaScript (ES6+)': 'javascript',
+  'Tailwind CSS': 'tailwindcss',
+  // Databases
+  'MySQL': 'mysql',
+  'PostgreSQL': 'postgresql',
+  'MSSQL': 'microsoftsqlserver', // SQL Server
+  'MongoDB': 'mongodb',
+  // Cloud & DevOps — AWS uses full URL (devicon) as simple-icons has fetch issues
+  'AWS EC2': 'amazonwebservices',
+  'AWS S3': 'amazonwebservices',
+  'AWS RDS': 'amazonwebservices',
+  'AWS Lambda': 'amazonwebservices',
+  'AWS': 'amazonwebservices',
+  'Docker': 'docker',
+  'GitHub Actions': 'githubactions',
+  'CI/CD': 'githubactions',
+  // Security & Integrations
+  'JWT': 'jsonwebtokens',
+  'OAuth2': 'openid',
+  'RBAC': 'auth0',
+  'OWASP': 'owasp',
+  'Stripe': 'stripe',
+  'QuickBooks': 'quickbooks',
+  'Xero': 'xero',
+  'XERO': 'xero',
+  'Azure AD': 'microsoft',
+  'ChatGPT': 'openai',
+  'LLM': 'openai',
+  // ML & Data Science
+  'spaCy / NLP': 'spacy',
+  'spaCy': 'spacy',
+  'ARIMA / AutoARIMA': 'numpy',
+  'ARIMA': 'numpy',
+  'RNN / LSTM': 'pytorch',
+  'RNN': 'pytorch',
+  'LSTM': 'pytorch',
+  'Time-Series Forecasting': 'pandas',
+  'Sentiment Analysis': 'python',
+  'Named Entity Recognition': 'spacy',
+}
+
+// Full icon URLs for tech that doesn't work with simple-icons CDN (e.g. AWS)
+// AWS uses local SVG for reliable loading
+const AWS_ICON = '/icons/aws.svg'
+export const techStackIconUrls: Record<string, string> = {
+  'AWS': AWS_ICON,
+  'AWS EC2': AWS_ICON,
+  'AWS S3': AWS_ICON,
+  'AWS RDS': AWS_ICON,
+  'AWS Lambda': AWS_ICON,
+}
+
 export const skillGroups = [
   {
     icon: '⚙️',

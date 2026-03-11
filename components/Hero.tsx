@@ -1,5 +1,13 @@
-import { person, heroStats, heroChips } from '@/data'
+import { person, heroStats, heroChips, techStackIcons, techStackIconUrls } from '@/data'
 import styles from './Hero.module.css'
+
+const ICON_CDN = 'https://cdn.simpleicons.org'
+
+function getIconSrc(skill: string): string | null {
+  if (techStackIconUrls[skill]) return techStackIconUrls[skill]
+  const slug = techStackIcons[skill]
+  return slug ? `${ICON_CDN}/${slug}` : null
+}
 
 export default function Hero() {
   return (
@@ -63,9 +71,23 @@ export default function Hero() {
           <div className={styles.divider} />
 
           <div className={styles.chipRow}>
-            {heroChips.map((c) => (
-              <span key={c} className={styles.chip}>{c}</span>
-            ))}
+            {heroChips.map((c) => {
+              const iconSrc = getIconSrc(c)
+              return (
+                <span key={c} className={styles.chip}>
+                  {iconSrc ? (
+                    <img
+                      src={iconSrc}
+                      alt={c}
+                      className={styles.chipIcon}
+                      width={14}
+                      height={14}
+                    />
+                  ) : null}
+                  {c}
+                </span>
+              )
+            })}
           </div>
         </div>
       </div>

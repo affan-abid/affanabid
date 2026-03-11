@@ -34,7 +34,7 @@
 .role {
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--fg);
   letter-spacing: -0.02em;
   margin-bottom: 0.3rem;
@@ -42,7 +42,7 @@
 
 .company {
   font-family: var(--font-mono), monospace;
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent2);
@@ -52,7 +52,7 @@
 .period {
   display: block;
   font-family: var(--font-mono), monospace;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   color: var(--fg3);
   letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
@@ -63,7 +63,7 @@
   border: 1px solid rgba(61, 220, 132, 0.22);
   color: var(--green);
   font-family: var(--font-mono), monospace;
-  font-size: 0.52rem;
+  font-size: 0.6rem;
   padding: 0.18rem 0.55rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -84,13 +84,13 @@
 .metricVal {
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: var(--accent);
   line-height: 1;
 }
 .metricLabel {
   font-family: var(--font-mono), monospace;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   letter-spacing: 0.08em;
   color: var(--fg3);
   text-transform: uppercase;
@@ -103,7 +103,7 @@
   position: relative;
   padding-left: 1.4rem;
   font-family: var(--font-body), sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   color: var(--fg2);
   line-height: 1.78;
   margin-bottom: 0.65rem;
@@ -113,7 +113,7 @@
   position: absolute;
   left: 0;
   color: var(--accent);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   top: 0.22rem;
 }
 .bullets :global(strong) { color: var(--fg); font-weight: 600; }
