@@ -30,7 +30,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Muhammad Affan Abid — Senior Full-Stack Engineer',
   description:
-    'Backend-focused full-stack engineer with 5+ years building B2B SaaS in healthcare, fintech & education. 2M+ monthly API requests, <200ms latency, 90% faster deployments.',
+    'Backend-focused full-stack engineer with 7+ years building B2B SaaS in healthcare, fintech & education. 2M+ monthly API requests, <200ms latency, 90% faster deployments.',
   keywords: ['Full Stack Engineer', 'Node.js', 'React', 'Laravel', 'AWS', 'TypeScript', 'New York'],
   authors: [{ name: 'Muhammad Affan Abid' }],
 }

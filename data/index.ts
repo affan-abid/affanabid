@@ -78,7 +78,7 @@ export const techStackIcons: Record<string, string> = {
   // Databases
   'MySQL': 'mysql',
   'PostgreSQL': 'postgresql',
-  'MSSQL': 'microsoftsqlserver', // SQL Server
+  //'MSSQL': 'microsoftsqlserver', // SQL Server
   'MongoDB': 'mongodb',
   // Cloud & DevOps — AWS uses full URL (devicon) as simple-icons has fetch issues
   'AWS EC2': 'amazonwebservices',
@@ -98,9 +98,12 @@ export const techStackIcons: Record<string, string> = {
   'QuickBooks': 'quickbooks',
   'Xero': 'xero',
   'XERO': 'xero',
-  'Azure AD': 'microsoft',
-  'ChatGPT': 'openai',
-  'LLM': 'openai',
+  'scikit-learn': 'scikitlearn',
+  //'Azure AD': 'microsoft',
+  //'ChatGPT': 'openai',
+  //'LLM': 'openai',
+  'Cursor': 'cursor',
+  'Claude': 'claude',
   // ML & Data Science
   'spaCy / NLP': 'spacy',
   'spaCy': 'spacy',
