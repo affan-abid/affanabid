@@ -25,7 +25,7 @@ export default function Hero() {
               <path d="M20 10c0 6-8 13-8 13s-8-7-8-13a8 8 0 0 1 16 0Z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
-            <span>New York, USA</span>
+            <span>Toronto, Canada</span>
           </div>
         </div>
 

@@ -4,14 +4,14 @@ export const person = {
   name: 'Muhammad Affan Abid',
   shortName: 'Affan.',
   role: 'Senior Full-Stack Engineer',
-  location: 'Hicksville, NY, USA',
+  location: 'Pickering, ON, Canada',
   email: 'm.affanabid@gmail.com',
-  phone: '+1 516 552 4991',
+  phone: '+1 437 451 2030',
   linkedin: 'https://www.linkedin.com/in/affan-abid/',
   summary:
-    'Backend-focused full-stack engineer with 5+ years building and scaling B2B SaaS across healthcare, fintech, and education. Shipped 10+ multi-tenant platforms, scaled APIs to 2M+ monthly requests at sub-200ms latency, and cut deployment time by 90%.',
+    'Backend-focused full-stack engineer with 7+ years building and scaling B2B SaaS across healthcare, fintech, and education. Shipped 10+ multi-tenant platforms, scaled APIs to 2M+ monthly requests at sub-200ms latency, and cut deployment time by 90%.',
   about: [
-    "I'm a <strong>Senior Full-Stack Software Engineer</strong> with 6+ years shipping production B2B SaaS platforms used by thousands across healthcare, fintech, and education. My focus is the backend — scalable APIs, rock-solid multi-tenant data models, and infrastructure that doesn't break at 2AM.",
+    "I'm a <strong>Senior Full-Stack Software Engineer</strong> with 7+ years shipping production B2B SaaS platforms used by thousands across healthcare, fintech, and education. My focus is the backend — scalable APIs, rock-solid multi-tenant data models, and infrastructure that doesn't break at 2AM.",
     "I've built systems that handle <strong>2M+ API requests per month at sub-200ms latency</strong>, achieved zero data-isolation incidents across 15+ multi-tenant products, and eliminated deployment headaches by cutting release cycles <strong>from 2–3 hours down to under 15 minutes</strong>.",
     "Beyond engineering, I'm an <strong>active ML researcher</strong> — published work on ARIMA, LSTM, and RNN models forecasting disease trends from clinical text, bridging data science with real-world healthcare impact.",
   ],
@@ -21,15 +21,15 @@ export const heroStats = [
   { val: '2M', unit: '+', label: 'Monthly API requests' },
   { val: '90', unit: '%', label: 'Faster deployments' },
   { val: '15', unit: '+', label: 'SaaS platforms shipped' },
-  { val: '4.0', unit: '', label: 'MS GPA — SUNY Old Westbury' },
+  { val: '4.0', unit: '', label: 'MS CGPA — SUNY Old Westbury' },
 ]
 
 export const heroChips = [
-  'Node.js', 'TypeScript', 'PHP', 'Laravel', 'Yii', 'React', 'Vue', 'AWS', 'Docker', 'MySQL', 'PostgreSQL', 'Python',
+  'Node.js', 'TypeScript', 'Python', 'React', 'Vue', 'PHP', 'Laravel', 'Yii', 'AWS', 'Docker', 'MySQL', 'PostgreSQL',
 ]
 
 export const aboutMetrics = [
-  { val: '50', unit: '+', label: 'REST APIs optimised' },
+  { val: '70', unit: '+', label: 'REST APIs optimised' },
   { val: '35', unit: '%', label: 'Fewer post-release defects' },
   { val: '8',  unit: '+', label: 'Engineers mentored' },
 ]
@@ -39,7 +39,7 @@ export const education = [
     degree: 'MS in Data Science',
     school: 'SUNY Old Westbury',
     year: 'May 2026',
-    gpa: '4.0 / 4.0',
+    gpa: '4.0',
   },
   {
     degree: 'MS in Computer Science',
@@ -129,7 +129,7 @@ export const skillGroups = [
   {
     icon: '⚙️',
     title: 'Backend',
-    skills: ['Node.js', 'TypeScript', 'PHP', 'Laravel', 'Yii2', 'Python', 'REST APIs'],
+    skills: ['Node.js', 'TypeScript', 'Python', 'PHP', 'Laravel', 'Yii2', 'REST APIs'],
   },
   {
     icon: '🖥️',
@@ -154,7 +154,25 @@ export const skillGroups = [
   {
     icon: '🤖',
     title: 'ML & Data Science',
-    skills: ['ARIMA / AutoARIMA', 'RNN / LSTM', 'spaCy / NLP', 'Named Entity Recognition', 'Time-Series Forecasting', 'Sentiment Analysis'],
+    skills: [
+      'ARIMA / AutoARIMA',
+      'RNN / LSTM',
+      'spaCy / NLP',
+      'Named Entity Recognition',
+      'Time-Series Forecasting',
+      'Sentiment Analysis',
+      'Random Forest',
+      'XGBoost',
+      'scikit-learn',
+      'Transformers',
+      'AI Agents',
+      'LangChain',
+    ],
+  },
+  {
+    icon: '✨',
+    title: 'AI-Assisted Development',
+    skills: ['ChatGPT', 'Claude', 'Cursor', 'Prompt Engineering', 'AI Pair Programming'],
   },
 ]
 
@@ -163,8 +181,8 @@ export const experience = [
     role: 'Senior Software Engineer',
     company: 'GoodCore Software Limited',
     location: 'Karachi, Pakistan',
-    period: 'Sep 2022 — Present',
-    current: true,
+    period: 'Sep 2022 — Oct 2026',
+    current: false,
     metrics: [
       { val: '2M+ ',    label: 'monthly API requests' },
       { val: '<200ms ', label: 'avg. API latency' },
