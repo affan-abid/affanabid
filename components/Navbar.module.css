@@ -41,11 +41,7 @@
 
 .link {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.72rem;
-=======
-  font-size: 0.78rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--fg2);

@@ -18,13 +18,8 @@
 
 .copy {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
   color: var(--fg3);
-=======
-  font-size: 0.72rem;
-  color: var(--fg2);
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.08em;
 }
 

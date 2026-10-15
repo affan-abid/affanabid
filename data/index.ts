@@ -9,7 +9,7 @@ export const person = {
   phone: '+1 437 451 2030',
   linkedin: 'https://www.linkedin.com/in/affan-abid/',
   summary:
-    'Backend-focused full-stack engineer with 7+ years building and scaling B2B SaaS across healthcare, fintech, and education. Shipped 10+ multi-tenant platforms, scaled APIs to 2M+ monthly requests at sub-200ms latency, and cut deployment time by 90%.',
+    'Backend-focused full-stack engineer with 7+ years building and scaling B2B SaaS across healthcare, fintech, and education. Shipped 15+ multi-tenant platforms, scaled APIs to 2M+ monthly requests at sub-200ms latency, and cut deployment time by 90%.',
   about: [
     "I'm a <strong>Senior Full-Stack Software Engineer</strong> with 7+ years shipping production B2B SaaS platforms used by thousands across healthcare, fintech, and education. My focus is the backend — scalable APIs, rock-solid multi-tenant data models, and infrastructure that doesn't break at 2AM.",
     "I've built systems that handle <strong>2M+ API requests per month at sub-200ms latency</strong>, achieved zero data-isolation incidents across 15+ multi-tenant products, and eliminated deployment headaches by cutting release cycles <strong>from 2–3 hours down to under 15 minutes</strong>.",

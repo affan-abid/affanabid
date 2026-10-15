@@ -7,13 +7,8 @@
 /* Section label e.g. "01 — About" */
 .label {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.7rem;
   letter-spacing: 0.22em;
-=======
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
->>>>>>> 39e035d (updated the css)
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 0.9rem;

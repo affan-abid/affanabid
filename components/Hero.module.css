@@ -58,11 +58,7 @@
   border: 1px solid rgba(61, 220, 132, 0.22);
   padding: 0.35rem 0.9rem;
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
-=======
-  font-size: 0.74rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--green);
@@ -87,11 +83,7 @@
   border: 1px solid var(--border2);
   padding: 0.35rem 0.85rem;
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
-=======
-  font-size: 0.74rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg2);
@@ -225,13 +217,8 @@
 }
 .scrollLabel {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
   letter-spacing: 0.22em;
-=======
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
->>>>>>> 39e035d (updated the css)
   text-transform: uppercase;
   color: var(--fg2);
 }
@@ -269,13 +256,8 @@
 
 .cardLabel {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
   letter-spacing: 0.22em;
-=======
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
->>>>>>> 39e035d (updated the css)
   text-transform: uppercase;
   color: var(--fg2);
   margin-bottom: 1.75rem;
@@ -307,11 +289,7 @@
 
 .metricLabel {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
-=======
-  font-size: 0.72rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg2);
@@ -338,11 +316,7 @@
   border: 1px solid var(--border);
   padding: 0.24rem 0.7rem;
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
-=======
-  font-size: 0.72rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.06em;
   color: var(--fg2);
   transition: border-color 0.2s, color 0.2s;

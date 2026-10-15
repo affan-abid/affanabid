@@ -39,13 +39,8 @@
 
 .meta {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.7rem;
   color: var(--fg3);
-=======
-  font-size: 0.74rem;
-  color: var(--fg2);
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.08em;
   margin-bottom: 0.9rem;
 }
@@ -55,11 +50,7 @@
   background: var(--surface2);
   border: 1px solid var(--border);
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
-=======
-  font-size: 0.7rem;
->>>>>>> 39e035d (updated the css)
   padding: 0.18rem 0.55rem;
   color: var(--accent);
   letter-spacing: 0.08em;
@@ -67,11 +58,7 @@
 
 .link {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.7rem;
-=======
-  font-size: 0.74rem;
->>>>>>> 39e035d (updated the css)
   color: var(--accent2);
   letter-spacing: 0.08em;
   border-bottom: 1px solid transparent;

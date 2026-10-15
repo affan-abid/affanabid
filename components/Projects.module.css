@@ -43,11 +43,7 @@
 
 .domain {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.68rem;
-=======
-  font-size: 0.72rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -55,13 +51,8 @@
 
 .years {
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
   color: var(--fg3);
-=======
-  font-size: 0.7rem;
-  color: var(--fg2);
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.06em;
 }
 
@@ -77,11 +68,7 @@
 
 .desc {
   font-family: var(--font-body), sans-serif;
-<<<<<<< HEAD
   font-size: 0.98rem;
-=======
-  font-size: 0.95rem;
->>>>>>> 39e035d (updated the css)
   color: var(--fg2);
   line-height: 1.7;
   flex: 1;
@@ -97,11 +84,7 @@
   background: var(--bg);
   border: 1px solid var(--border);
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
-=======
-  font-size: 0.7rem;
->>>>>>> 39e035d (updated the css)
   padding: 0.18rem 0.52rem;
   letter-spacing: 0.06em;
   color: var(--fg2);

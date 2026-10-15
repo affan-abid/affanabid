@@ -48,11 +48,7 @@
   border: 1px solid var(--border);
   padding: 0.28rem 0.7rem;
   font-family: var(--font-mono), monospace;
-<<<<<<< HEAD
   font-size: 0.65rem;
-=======
-  font-size: 0.72rem;
->>>>>>> 39e035d (updated the css)
   letter-spacing: 0.07em;
   color: var(--fg2);
   transition: border-color 0.2s, color 0.2s;
