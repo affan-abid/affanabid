@@ -13,7 +13,7 @@
 }
 
 .navScrolled {
-  background: rgba(26, 26, 30, 0.88);
+  background: rgba(20, 20, 24, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom-color: var(--border);
@@ -41,10 +41,14 @@
 
 .link {
   font-family: var(--font-mono), monospace;
+<<<<<<< HEAD
   font-size: 0.72rem;
+=======
+  font-size: 0.78rem;
+>>>>>>> 39e035d (updated the css)
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--fg3);
+  color: var(--fg2);
   text-decoration: none;
   transition: color 0.2s;
   position: relative;
@@ -73,6 +77,16 @@
   .nav { padding: 1rem 1.5rem; }
   .links { gap: 1.5rem; }
 }
+/* Phones: keep the links reachable (scrollable row) instead of hiding them */
 @media (max-width: 600px) {
-  .links { display: none; }
+  .nav { gap: 1rem; }
+  .links {
+    gap: 1.1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+            mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+  .links::-webkit-scrollbar { display: none; }
+  .link { white-space: nowrap; }
 }

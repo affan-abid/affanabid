@@ -7,8 +7,13 @@
 /* Section label e.g. "01 — About" */
 .label {
   font-family: var(--font-mono), monospace;
+<<<<<<< HEAD
   font-size: 0.7rem;
   letter-spacing: 0.22em;
+=======
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+>>>>>>> 39e035d (updated the css)
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 0.9rem;
@@ -41,6 +46,9 @@
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
   letter-spacing: -0.04em;
+  display: inline-block;
+  padding: 0 0.14em 0.06em 0;   /* room for italic overhang so the last letter isn't clipped */
+  margin-right: -0.14em;
   background: linear-gradient(125deg, var(--accent) 0%, #f0965e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
