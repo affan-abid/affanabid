@@ -25,7 +25,7 @@ export const heroStats = [
 ]
 
 export const heroChips = [
-  'Node.js', 'TypeScript', 'Python', 'React', 'Vue', 'PHP', 'Laravel', 'Yii', 'AWS', 'Docker', 'MySQL', 'PostgreSQL',
+  'Node.js', 'TypeScript', 'React', 'Vue', 'Python', 'Django', 'Flask', 'PHP', 'Laravel', 'Yii2', 'AWS', 'Docker', 'MySQL', 'PostgreSQL', 'MsSQL', 'MongoDB'
 ]
 
 export const aboutMetrics = [
@@ -67,6 +67,8 @@ export const techStackIcons: Record<string, string> = {
   'Yii2': 'yii',
   'Yii': 'yii',
   'Python': 'python',
+  'Django': 'django',
+  'Flask': 'flask',
   'REST APIs': 'openapiinitiative',
   // Frontend
   'React': 'react',
@@ -132,7 +134,7 @@ export const skillGroups = [
   {
     icon: '⚙️',
     title: 'Backend',
-    skills: ['Node.js', 'TypeScript', 'Python', 'PHP', 'Laravel', 'Yii2', 'REST APIs'],
+    skills: ['Node.js', 'TypeScript', 'Python', 'Django', 'Flask', 'PHP', 'Laravel', 'Yii2', 'REST APIs'],
   },
   {
     icon: '🖥️',
@@ -142,7 +144,7 @@ export const skillGroups = [
   {
     icon: '🗄️',
     title: 'Databases',
-    skills: ['MySQL', 'PostgreSQL', 'MSSQL', 'MongoDB', 'Query Optimisation', '5M+ row datasets'],
+    skills: ['MySQL', 'PostgreSQL', 'MSSQL', 'MongoDB', 'Query Optimisation', 'Indexing', 'Database Design', '5M+ row datasets'],
   },
   {
     icon: '☁️',
@@ -229,49 +231,97 @@ export const projects = [
     num: '01',
     domain: 'Licensing / Music Ed',
     name: 'PMLLHub',
-    description: 'Automated royalty distribution, billing, and reporting for <strong>500+ educational institutions and choirs</strong> — eliminating manual end-to-end processing time with a multi-module licensing management platform.',
-    stack: ['Node.js', 'MySQL', 'React.js', 'Stripe', 'XERO'],
+    description: 'Licensing management platform automating purchases, billing, reporting, and royalty distribution for <strong>500+ educational institutions and choirs</strong>. Includes a self-service licensee portal with variable-based pricing and <strong>real-time usage reporting</strong> for accurate royalty payments.',
+    stack: ['Node.js', 'MySQL', 'React.js', 'Stripe', 'Xero'],
     years: '2020–2026',
   },
   {
     num: '02',
-    domain: 'Public Sector / GovTech',
-    name: 'BidSushi',
-    description: 'Built a <strong>full-stack tender automation platform</strong> for public sector clients, reducing manual bid management effort and streamlining the end-to-end workflow from submission to real-time tracking.',
-    stack: ['Node.js', 'PostgreSQL', 'React'],
-    years: '2023',
-  },
-  {
-    num: '03',
     domain: 'Healthcare Staffing',
     name: 'GPWales',
     description: 'Healthcare staffing platform enabling real-time shift discovery, booking, and management for medical professionals. Reduced manual coordination effort by <strong>~40%</strong> via automated scheduling and approval workflows.',
     stack: ['PHP', 'Laravel', 'Docker', 'MySQL', 'Vue.js'],
-    years: '2023–2025',
+    years: '2022–2025',
   },
   {
-    num: '04',
+    num: '03',
     domain: 'Fintech / Pension',
     name: 'ISIO',
-    description: 'Secure pension policy management covering enrollment, contributions, and compliance reporting. Designed optimised PostgreSQL schemas and integrated <strong>AWS S3 + Azure AD</strong> for document handling.',
+    description: 'Secure pension policy management covering enrollment, contributions, and compliance reporting. Designed optimised PostgreSQL schemas and integrated <strong>AWS S3 + Azure AD</strong> for secure document handling.',
     stack: ['PHP', 'Laravel', 'React', 'PostgreSQL', 'AWS S3'],
     years: '2024–2025',
   },
   {
+    num: '04',
+    domain: 'B2B Marketplace',
+    name: 'MAPT',
+    description: 'Led backend development for a <strong>multi-tenant B2B marketplace</strong> covering product workflows, logistics, and analytics. Designed scalable APIs and Vue.js interfaces that improved system responsiveness and operational transparency.',
+    stack: ['PHP', 'Laravel', 'MySQL', 'Vue.js'],
+    years: '2022–2024',
+  },
+  {
     num: '05',
-    domain: 'Education Technology',
-    name: 'AppsAnywhere',
-    description: 'Cloud-based academic software delivery platform used by universities. Improved deployment consistency and access reliability for <strong>thousands of students and staff</strong>.',
-    stack: ['PHP', 'Zend', 'MySQL', 'MSSQL', 'Vue.js'],
-    years: '2021–2023',
+    domain: 'Biomedical / Data Viz',
+    name: 'Cardiatec',
+    description: 'Biomedical data visualization platform for analysing <strong>protein–protein interaction datasets</strong>. Built interactive visualizations for exploring large-scale biological data, backed by Node.js services delivering structured data to the frontend in real time.',
+    stack: ['Node.js', 'MySQL', 'React.js', 'Python', 'AWS'],
+    years: '2024',
   },
   {
     num: '06',
+    domain: 'Public Sector / GovTech',
+    name: 'BidSushi',
+    description: 'Built a <strong>full-stack tender automation platform</strong> for public sector clients, reducing manual bid management effort and streamlining the end-to-end workflow from submission to real-time tracking.',
+    stack: ['Python', 'Django', 'PostgreSQL', 'React'],
+    years: '2023',
+  },
+  {
+    num: '07',
+    domain: 'Education Technology',
+    name: 'AppsAnywhere',
+    description: 'Backend features and APIs for a cloud-based academic software delivery platform used by universities. Improved deployment consistency and access reliability for <strong>thousands of students and staff</strong>, and strengthened API documentation and testing.',
+    stack: ['PHP', 'Zend', 'MySQL', 'MSSQL', 'PostgreSQL', 'Vue.js'],
+    years: '2021–2023',
+  },
+  {
+    num: '08',
+    domain: 'Sports / Mobile',
+    name: 'Pick10',
+    description: 'Golf fantasy-sports application available on <strong>iOS</strong> with a companion web portal for admin management. Built the backend APIs powering the mobile app and the admin portal, with integrations for Firebase and Twilio.',
+    stack: ['PHP', 'Yii2', 'MySQL', 'Swift', 'Firebase', 'Twilio'],
+    years: '',
+  },
+  {
+    num: '09',
+    domain: 'Fintech / Lending',
+    name: 'GCBF',
+    description: 'Loan management system for the UK market that <strong>automates the end-to-end loan process</strong>, replacing manual handling of applications and approvals.',
+    stack: ['PHP', 'Yii2', 'MySQL'],
+    years: '',
+  },
+  {
+    num: '10',
     domain: 'ML Research',
     name: 'Disease Trend Forecasting',
-    description: 'NLP pipeline using spaCy to extract medical entities from clinical records, then trained ARIMA, AutoARIMA, RNN, and LSTM models to forecast disease trends. Evaluated via RMSE and MAE.',
+    description: 'NLP pipeline using spaCy to extract medical entities (diseases, symptoms, treatments) from clinical records, then trained <strong>ARIMA, AutoARIMA, RNN, and LSTM</strong> models to forecast disease trends. Evaluated via RMSE and MAE.',
     stack: ['Python', 'spaCy', 'LSTM', 'ARIMA', 'RNN'],
     years: '2024–2025',
+  },
+  {
+    num: '11',
+    domain: 'Business Analytics',
+    name: 'Manhattan Analytics Competition',
+    description: 'Led a team to the <strong>semi-finals</strong> of the 2023 Manhattan Business Analytics Competition, analysing food security in Sub-Saharan Africa using statistical analysis and interactive dashboards.',
+    stack: ['R', 'SPSS', 'Tableau'],
+    years: '2023',
+  },
+  {
+    num: '12',
+    domain: 'Data Engineering',
+    name: 'E-Commerce Data Warehouse',
+    description: 'Designed and implemented a <strong>SQL-based data warehouse</strong> simulating an eBay-style backend. Ingested transaction data to model user activity, sales, and product listings for advanced querying and analysis.',
+    stack: ['SQL', 'Data Warehousing', 'ETL'],
+    years: '',
   },
 ]
 
